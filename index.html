@@ -3,131 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>random-prioritised A1-C2, (random-prioritised-words-A1-to-C2)</title>
+    <title>random-prioritised A1-C2</title>
 </head>
 <body style="padding: 3%; margin: 3%;">
     <h1 id="content" style="font-size: 3em; text-align: center;"></h1>
     <br><br><br>
-    <button onclick="refresh()" style="font-size: 2em; width: 100%; height: 3em;">new</button>
-    <br><br><br>
-    <h3>
-<br><br>
-================================================================================<br>
-<br><br>
-In terms of grammar, English is typically divided into several key components:<br>
-<br>
-1. Parts of Speech:<br>
-   - Nouns<br>
-   - Pronouns<br>
-   - Verbs<br>
-   - Adjectives<br>
-   - Adverbs<br>
-   - Prepositions<br>
-   - Conjunctions<br>
-   - Interjections<br>
-<br>
-2. Sentence Structure:<br>
-   - Subject<br>
-   - Predicate<br>
-   - Object<br>
-   - Complements (such as direct and indirect objects)<br>
-<br>
-3. Tenses:<br>
-   - Past, present, and future tenses<br>
-<br>
-4. Voice:<br>
-   - Active voice<br>
-   - Passive voice<br>
-<br>
-5. Mood:<br>
-   - Indicative<br>
-   - Imperative<br>
-   - Subjunctive<br>
-<br>
-6. Modifiers:<br>
-   - Including phrases and clauses that provide additional information.<br>
-<br>
-7. Agreement:<br>
-   - Subject-verb agreement<br>
-   - Pronoun-antecedent agreement<br>
-<br>
-8. Punctuation:<br>
-   - Periods, commas, semicolons, colons, etc.<br>
-<br>
-9. Clauses:<br>
-   - Independent clauses<br>
-   - Dependent clauses<br>
-<br>
-10. Conjunctions:<br>
-    - Coordinating conjunctions (e.g., and, but, or)<br>
-    - Subordinating conjunctions (e.g., because, although)<br>
-<br>
-================================================================================<br>
-<br>
-Let's delve a bit deeper into English grammar:<br>
-<br>
-1. Parts of Speech:<br>
-   - Nouns: Words that represent people, places, things, or ideas.<br>
-   - Pronouns: Words that replace nouns (e.g., he, she, it).<br>
-   - Verbs: Action or state words (e.g., run, think).<br>
-   - Adjectives: Describe or modify nouns (e.g., happy, tall).<br>
-   - Adverbs: Describe or modify verbs, adjectives, or other adverbs (e.g., quickly, very).<br>
-   - Prepositions: Show relationships between nouns and other words in a sentence (e.g., on, under, beside).<br>
-   - Conjunctions: Connect words, phrases, or clauses (e.g., and, but, or).<br>
-   - Interjections: Express strong emotions (e.g., wow, oh).<br>
-<br>
-2. Sentence Structure:<br>
-   - Subject: The main noun or pronoun that the sentence is about.<br>
-   - Predicate: The verb and its modifiers, showing the action or state of the subject.<br>
-   - Object: The recipient of the action in a sentence.<br>
-<br>
-3. Tenses:<br>
-   - Past: Actions that happened before the present.<br>
-   - Present: Actions happening now.<br>
-   - Future: Actions that will happen.<br>
-<br>
-4. Voice:<br>
-   - Active Voice: The subject performs the action.<br>
-   - Passive Voice: The subject is acted upon.<br>
-<br>
-5. Mood:<br>
-   - Indicative: States facts or asks questions.<br>
-   - Imperative: Gives commands or requests.<br>
-   - Subjunctive: Expresses wishes, doubts, or hypothetical situations.<br>
-<br>
-6. Modifiers:<br>
-   - Phrases: Groups of words functioning as a single unit.<br>
-   - Clauses: Groups of words with a subject and a predicate.<br>
-<br>
-7. Agreement:<br>
-   - Subject-Verb Agreement: Matching the number of the subject with the verb.<br>
-   - Pronoun-Antecedent Agreement: Matching pronouns with the nouns they replace.<br>
-<br>
-8. Punctuation:<br>
-   - Various punctuation marks serve to indicate pauses, ends of sentences, and more.<br>
-<br>
-9. Clauses:<br>
-   - Independent Clauses: Can stand alone as a complete sentence.<br>
-   - Dependent Clauses: Cannot stand alone and need an independent clause.<br>
-<br>
-10. Conjunctions:<br>
-    - Coordinating Conjunctions: Join equal elements (e.g., FANBOYS - for, and, nor, but, or, yet, so).<br>
-    - Subordinating Conjunctions: Connect subordinate (dependent) clauses to main (independent) clauses.<br>
-<br>
-================================================================================<br>
-<br>
-[<br>
-    https://www.ef.com/wwen/english-resources/english-grammar<br>
-    https://www.learngrammar.net/english-grammar<br>
-    https://www.englisch-hilfen.de/en/inhalt_grammar.htm<br>
-    https://test-english.com/grammar-points/contents<br>
-    https://learnenglish.britishcouncil.org/grammar<br>
-    https://www.careerpower.in/english-grammar.html<br>
-    https://byjus.com/english/english-grammar<br>
-]<br>
-<br>
-================================================================================<br>
-    </h3>
+    <button onclick="refresh()" style="font-size: 1.5em; width: 100%; height: 3em;">new</button>
     
     <script>
         var words = [
@@ -140609,7 +140490,7 @@ Let's delve a bit deeper into English grammar:<br>
         
         function refresh(){
             var word = words[random(0, words.length)];
-            document.getElementById("content").innerHTML = word;
+            document.getElementById("content").innerHTML = `<a target="_blank" style="text-decoration: none; color: rgb(33, 33, 33);" href="https://www.ldoceonline.com/dictionary/${word}">${word}</a>`;
         }
         
         refresh();
